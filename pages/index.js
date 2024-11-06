@@ -9,6 +9,8 @@ import consulting from "../public/consulting.png";
 import Image from "next/image";
 import phonecase from "../public/phonecase.jpg";
 import gptclone from "../public/gptclone.png";
+import bookstre from "../public/bookstre.png"
+
 
 
 export default function Home() {
@@ -29,12 +31,12 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl transition-transform duration-100 ease-in-out hover:scale-105 hover:shadow-lg"
                 />
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:shadow-lg hover:underline"
                   href="#"
                 >
                   Resume
@@ -46,13 +48,13 @@ export default function Home() {
   <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-10 ">
     
     <div className="bg-gradient-to-b from-teal-500 md:mr-20 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg rounded-full w-60 h-60 relative overflow-hidden mt-10 md:w-80 md:h-80">
-      <Image  src={avtr} layout="fill" objectFit="cover" />
+      <Image  src={avtr} alt="avatar" layout="fill" objectFit="cover" />
     </div>
 
     
     <div className="mt-5 md:mt-0 text-center md:text-left p-10 shadow-2xl " >
       <h2 className="text-4xl py-1.5  text-teal-600 font-medium dark:text-teal-400 md:text-5xl  ">
-        I'm Ajay Soni
+        I am Ajay Soni
       </h2>
       <h3 className="text-2xl py-1.5 dark:text-white md:text-3xl">
         Web Developer
@@ -88,7 +90,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={design} alt="design" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Designs
               </h3>
@@ -103,12 +105,12 @@ export default function Home() {
               <p className="text-gray-800 py-1">And many other</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={code} alt="code img" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Lets make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Web Tools I Use</h4>
@@ -118,7 +120,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Vercel for deployment</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-  <Image src={consulting} width={100} height={100} />
+  <Image src={consulting} alt="consult img" width={100} height={100} />
   <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
   <p className="py-2">
     Are you looking for feedback on your current project? I can provide tips and tricks to help elevate it to the next level.
@@ -134,16 +136,13 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Projects overview</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              fjkhjkfhadkjhkjadbcbhswdfhajkhfjkahkjfhakjdhdfafadfvsdvzxvsdv
-              <span className="text-teal-500">sdfc </span>
-              svzc <span className="text-teal-500"> </span>
-             sdfkjhdkjahfkjhkjda
+              Used several technologies to build professional looking projects with todays world 
+              <span className="text-teal-500"> functionality </span>
+              
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            sdzvc
-            </p>
+          
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
@@ -153,6 +152,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={gptclone} 
+                alt="img"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -163,7 +163,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={gptclone}
-                
+                alt="https://github.com/AjaySoni-gh/GPT-Clone"                
                />
               </a>
 
@@ -176,16 +176,19 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                  src={phonecase}
+                 alt="https://github.com/AjaySoni-gh/phonecase_store"
               /> </a>
             </div>
             <div className="basis-1/3 flex-1">
+            <a href="https://github.com/AjaySoni-gh/BookStore-FS" target="_blank" rel="noopener noreferrer">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={phonecase}
-              />
+                src={bookstre}
+                alt="https://github.com/AjaySoni-gh/BookStore-FS"
+              /> </a>
             </div>
           
           </div>

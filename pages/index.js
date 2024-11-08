@@ -147,14 +147,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-              <Image
+           < a href="https://github.com/AjaySoni-gh/restorationchamp" target="_blank" rel="noopener noreferrer"><Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={Rescham} 
                 alt="https://github.com/AjaySoni-gh/restorationchamp"
-              />
+              /></a>
             </div>
             <div className="basis-1/3 flex-1">
             <a href="https://github.com/AjaySoni-gh/GPT-Clone" target="_blank" rel="noopener noreferrer">

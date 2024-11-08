@@ -7,9 +7,10 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import phonecase from "../public/phonecase.jpg";
+import phcase from "../public/phcase.png";
 import gptclone from "../public/gptclone.png";
 import bookstre from "../public/bookstre.png"
+import Rescham from "../public/Rescham.png"
 
 
 
@@ -145,14 +146,14 @@ export default function Home() {
           
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={gptclone} 
-                alt="img"
+                src={Rescham} 
+                alt="https://github.com/AjaySoni-gh/restorationchamp"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -175,7 +176,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                 src={phonecase}
+                 src={phcase}
                  alt="https://github.com/AjaySoni-gh/phonecase_store"
               /> </a>
             </div>

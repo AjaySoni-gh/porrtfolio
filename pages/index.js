@@ -11,7 +11,8 @@ import phcase from "../public/phcase.png";
 import gptclone from "../public/gptclone.png";
 import bookstre from "../public/bookstre.png"
 import Rescham from "../public/Rescham.png"
-
+import therecipe from "../public/therecipe.png"
+import zoomClone from "../public/zoomClone.png"
 
 
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:shadow-lg hover:underline"
-                  href="#"
+                  href="https://drive.google.com/file/d/1wVggc-JjYlGrifa1oedMaroUxxQ6BU_a/view?usp=drive_link"
                 >
                   Resume
                 </a>
@@ -117,7 +118,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Web Tools I Use</h4>
               <p className="text-gray-800 py-1">Next js a react framework</p>
               <p className="text-gray-800 py-1">Neon for DB</p>
-              <p className="text-gray-800 py-1">Kinde for auth</p>
+              <p className="text-gray-800 py-1">Kinde or clerk for auth</p>
               <p className="text-gray-800 py-1">Vercel for deployment</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -140,21 +141,45 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Projects overview</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Used several technologies to build professional looking projects with todays world 
-              <span className="text-teal-500"> functionality </span>
+              <span className="text-teal-500"> functionality </span> .Tap on them for source code.
               
             </p>
           
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1">
+            <a href="https://github.com/AjaySoni-gh/zoom_clone" target="_blank" rel="noopener noreferrer">
+              <Image
+                className="rounded-lg object-cover  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={zoomClone}
+                alt="https://github.com/AjaySoni-gh/zoom_clone"
+              /> </a>
+           <h1 className="p-4">Zoom Clone</h1> </div>
+            <div className="basis-1/3 flex-1">
+            <a href="https://github.com/AjaySoni-gh/openAI" target="_blank" rel="noopener noreferrer">
+              <Image
+                className="rounded-lg object-cover  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={therecipe}
+                alt="https://github.com/AjaySoni-gh/openAI"
+              /> </a>
+               <h1 className="p-4">AI recipe app</h1>
+            </div>
             <div className="basis-1/3 flex-1  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-           < a href="https://github.com/AjaySoni-gh/restorationchamp" target="_blank" rel="noopener noreferrer"><Image
+           < a href="https://github.com/AjaySoni-gh/restorationchamps" target="_blank" rel="noopener noreferrer"><Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={Rescham} 
-                alt="https://github.com/AjaySoni-gh/restorationchamp"
+                alt="https://github.com/AjaySoni-gh/restorationchamps"
               /></a>
+               <h1 className="p-4">Restoration champ</h1>
             </div>
             <div className="basis-1/3 flex-1">
             <a href="https://github.com/AjaySoni-gh/GPT-Clone" target="_blank" rel="noopener noreferrer">
@@ -167,6 +192,7 @@ export default function Home() {
                 alt="https://github.com/AjaySoni-gh/GPT-Clone"                
                />
               </a>
+              <h1 className="p-4">GPT Clone</h1>
 
             </div>
             <div className="basis-1/3 flex-1">
@@ -179,6 +205,7 @@ export default function Home() {
                  src={phcase}
                  alt="https://github.com/AjaySoni-gh/phonecase_store"
               /> </a>
+               <h1 className="p-4">Phone Case store</h1>
             </div>
             <div className="basis-1/3 flex-1">
             <a href="https://github.com/AjaySoni-gh/BookStore-FS" target="_blank" rel="noopener noreferrer">
@@ -190,7 +217,9 @@ export default function Home() {
                 src={bookstre}
                 alt="https://github.com/AjaySoni-gh/BookStore-FS"
               /> </a>
+               <h1 className="p-4">Book Store</h1>
             </div>
+            
           
           </div>
         </section>

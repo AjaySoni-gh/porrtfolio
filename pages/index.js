@@ -39,7 +39,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:shadow-lg hover:underline"
-                  href="https://drive.google.com/file/d/1wVggc-JjYlGrifa1oedMaroUxxQ6BU_a/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1MHk4adXR0Kya8L1eRBW3lp9qaW4LhoOm/view?usp=drive_link"
                 >
                   Resume
                 </a>
